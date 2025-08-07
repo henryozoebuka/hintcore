@@ -1,0 +1,128 @@
+:root {
+  /* === Brand Colors === */
+  --color-primary: #3F3D56;           /* Deep purple-gray for hero background */
+  --color-primary-rgb: 63, 61, 86;    /* RGB version for overlays */
+  --color-accent: #00C2CB;            /* Vibrant turquoise for buttons/links */
+  --color-accent-rgb: 0, 194, 203;
+  --color-cta: #FF6B00;               /* Orange CTA highlight */
+  --color-cta-rgb: 255, 107, 0;
+
+  /* === Extended Brand Palette === */
+  --color-secondary: #1A1A2E;         /* Deep navy for footer/dark sections */
+  --color-accent-light: #8FF9FF;      /* Lighter accent for hover/glow */
+  --color-accent-dark: #008F95;       /* Darker accent shade */
+
+  /* === Neutrals === */
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-light-gray: #F5F5F5;
+  --color-gray: #CCCCCC;
+  --color-mid-gray: #999999;
+  --color-dark-gray: #2E2E2E;
+  --color-text: #1E1E1E;
+
+  /* === Utility / Status === */
+  --color-success: #28a745;
+  --color-error: #dc3545;
+  --color-warning: #ffc107;
+
+  /* === Shadows === */
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-deep: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  /* === Fonts === */
+  --font-main: 'Inter', 'DM Sans', 'Segoe UI', sans-serif;
+
+  /* === Border Radius === */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  /* === Transitions === */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
+  --transition-slow: 0.4s ease-in-out;
+}
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* index.css (continue after :root) */
+
+/* CSS Reset - Simplified */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main-content {
+  flex: 1;
+}
+
+/* Default containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-cta);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+}
+
+/* Spacing helpers */
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-8 { margin-bottom: 2rem; }

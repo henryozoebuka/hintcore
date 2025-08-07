@@ -1,0 +1,105 @@
+.topbar {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;     /* Older syntax, still widely supported */
+    overflow-wrap: break-word; /* Modern standard syntax */
+    word-break: break-word;    /* Break long words at arbitrary points */
+}
+
+.topbar-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topbar-left {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.topbar-right {
+    display: flex;
+    column-gap: 5px;
+    text-align: right;
+}
+
+.topbar .topbar-right a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.topbar .topbar-right a:hover {
+    color: var(--color-cta);
+}
+
+.topbar-action-buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.topbar-logout {
+    color: #008751;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.topbar-logout:hover {
+    outline: .5px #008751 dotted;
+}
+
+.topbar-login {
+    color: #008751;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.topbar-login:hover {
+    outline: .5px #008751 dotted;
+}
+
+.topbar-sign-up {
+    color: #ffffff;
+    background-color: #008751;
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.topbar-sign-up:hover {
+    color: #008751;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 530px) {
+    .topbar-left {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .topbar-right {
+        margin-top: 10px;
+    }
+}

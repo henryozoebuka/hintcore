@@ -1,0 +1,84 @@
+.about {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-hero,
+.about-story,
+.about-values {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-story h2,
+.about-values h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.about-story p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 700px;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-values li {
+  font-size: 1rem;
+  color: #444;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-story h2,
+  .about-values h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-hero p,
+  .about-story p,
+  .about-values li {
+    font-size: 0.95rem;
+  }
+}
