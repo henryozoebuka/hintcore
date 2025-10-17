@@ -20,7 +20,7 @@ const Topbar = () => {
             <div className="topbar-wrapper">
                 <div className="topbar-content">
                     <div className="topbar-left">
-                        <span className='topbar-left-span'>📞 +234 803 259 8778</span>
+                        <span className='topbar-left-span'>📞 +234 805 902 7156</span>
                         <span className='topbar-right-span'>📧 info@hintcore.com.ng</span>
                         {/* {
                             token ?
@@ -43,7 +43,7 @@ const Topbar = () => {
                         <a href="/"><FaTwitter /></a>
                         <a href="/"><FaInstagram /></a>
                         <a
-                            href="https://wa.me/2348032598778"
+                            href="https://wa.me/2348059027156"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="WhatsApp"

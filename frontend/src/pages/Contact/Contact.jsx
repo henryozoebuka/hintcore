@@ -54,7 +54,7 @@ const Contact = () => {
                         <h3>Contact Info</h3>
                         <p><strong>Address:</strong> Enugu, Nigeria</p>
                         <p><strong>Email:</strong> info@hintcore.com.ng</p>
-                        <p><strong>Phone:</strong> +234 803 259 8778</p>
+                        <p><strong>Phone:</strong> +234 805 902 7156</p>
                     </div>
                 </div>
             </div>

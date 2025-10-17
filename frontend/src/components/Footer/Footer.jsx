@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>Email: info@hintcore.com.ng</p>
-          <p>Phone: +234 803 259 8778</p>
+          <p>Phone: +234 805 902 7156</p>
           <p>Location: Enugu, Nigeria</p>
         </div>
       </div>
