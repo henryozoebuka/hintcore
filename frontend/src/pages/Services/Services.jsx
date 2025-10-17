@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -59,9 +60,9 @@ const Services = () => {
         <p>
           Have an idea or project in mind? Let’s collaborate and turn it into a powerful digital experience.
         </p>
-        <a href="/contact" className="services-contact-btn">
+        <Link to={"/contact"} className="services-contact-btn">
           Contact Us
-        </a>
+        </Link>
       </div>
     </div>
   );
